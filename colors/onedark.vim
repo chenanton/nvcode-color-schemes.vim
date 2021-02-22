@@ -1,4 +1,6 @@
-" Maintainer: Christian Chiarulli <chrisatmachine@gmail.com>
+" Description: Syntax group color definition.
+" Original Maintainer: Christian Chiarulli <chrisatmachine@gmail.com>
+" Fork Maintainer: Anton Chen <contact@antonchen.ca>
 
 " Initiazilation: {{{
 
@@ -10,7 +12,6 @@ endif
 let g:colors_name='onedark'
 
 " }}}
-
 " Common: {{{
 
 hi Normal guifg=#abb2bf ctermfg=249 guibg=#1e2127 ctermbg=235 gui=NONE cterm=NONE
@@ -46,10 +47,8 @@ hi Error guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=bold,reverse cter
 hi Todo guifg=#c586c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=bold,italic cterm=bold,italic
 hi Underlined guifg=#56b6c2 ctermfg=73 gui=underline cterm=underline
 
-
 " }}}
-
-" Vim: {{{
+" Editor: {{{
 
 hi Cursor guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#2c323c ctermbg=236 gui=NONE cterm=NONE
@@ -69,7 +68,7 @@ hi Folded guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi IncSearch guifg=#e5c07b ctermfg=180 guibg=#5c6370 ctermbg=241 gui=NONE cterm=NONE
 hi LineNr guifg=#4b5263 ctermfg=240 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi MatchParen guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=underline cterm=underline
+hi MatchParen guifg=#f3f4f5 ctermfg=75 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi NonText guifg=#3b4048 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Pmenu guifg=#abb2bf ctermfg=249 guibg=#282c34 ctermbg=236 gui=NONE cterm=NONE
 hi PmenuSel guifg=#1e1e1e ctermfg=234 guibg=#61afef ctermbg=75 gui=NONE cterm=NONE
@@ -95,16 +94,21 @@ hi Visual guifg=NONE ctermfg=NONE guibg=#3e4452 ctermbg=238 gui=NONE cterm=NONE
 hi VisualNOS guifg=#3e4452 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WarningMsg guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#1e1e1e ctermfg=234 guibg=#61afef ctermbg=75 gui=NONE cterm=NONE
-hi EndOfBuffer guifg=#1e1e1e ctermfg=234 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi EndOfBuffer guifg=#2c323c ctermfg=234 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 " }}}
-
 " Treesitter: {{{
+
+" Misc: {{{
 
 hi TSError guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSPunctDelimiter guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSPunctBracket guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSPunctSpecial guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Primitives: {{{
+
 hi TSConstant guifg=#e06c75 ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSConstBuiltin guifg=#d19a66 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSConstMacro guifg=#56b6c2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -118,6 +122,10 @@ hi TSFloat guifg=#98c379 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSAnnotation guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSAttribute guifg=#56b6c2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSNamespace guifg=#e5c07b ctermfg=201 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Functions: {{{
+
 hi TSFuncBuiltin guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSFunction guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSFuncMacro guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -127,6 +135,10 @@ hi TSMethod guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSField guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSProperty guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSConstructor guifg=#56b6c2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Keywords: {{{
+
 hi TSConditional guifg=#c586c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSRepeat guifg=#c586c0 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSLabel guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -139,8 +151,16 @@ hi TSType guifg=#c586c0 ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSTypeBuiltin guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSStructure guifg=#e06c75 ctermfg=201 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSInclude guifg=#e06c75 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Variables: {{{
+
 hi TSVariable guifg=#56b6c2 ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSVariableBuiltin guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Text: {{{
+
 hi TSText guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSStrong guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSEmphasis guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -148,11 +168,16 @@ hi TSUnderline guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi TSTitle guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSLiteral guifg=#e5c07b ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSURI guifg=#98c379 ctermfg=226 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Tags: {{{
+
 hi TSTag guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSTagDelimiter guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 " }}}
 
+" }}}
 " HTML: {{{
 
 hi htmlArg guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -174,7 +199,6 @@ hi htmlTagName guifg=#61afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=N
 hi htmlTitle guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 " }}}
-
 " Markdown: {{{
 
 hi markdownBlockquote guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -202,19 +226,27 @@ hi markdownRule guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm
 hi markdownUrl guifg=#56b6c2 ctermfg=73 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 
 " }}}
-
 " Tex: {{{
 
-hi texPartArgTitle guifg=#e06c75 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texPartArgTitle guifg=#e5c07b ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi texDelim guifg=#abb2bf ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi texCmdPart guifg=#61afef ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-
+hi texTabularChar guifg=#c586c0 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texCmdPart guifg=#e06c75 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texCmdStyle guifg=#56b6c2 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texCmdMathEnv guifg=#61afef ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 hi texMathEnvArgName guifg=#e06c75 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi texMathDelim guifg=#56b6c2 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texMathZoneEnv guifg=#98c379 ctermfg=241 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi texMathZoneX guifg=#98c379 ctermfg=241 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi texMathGroup guifg=#98c379 ctermfg=241 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi texMathSymbol guifg=#98c379 ctermfg=241 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi texMathArg guifg=#98c379 ctermfg=241 guibg=NONE ctermbg=NONE gui=italic cterm=italic
+hi texMathDelim guifg=#61afef ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texMathDelimZone guifg=#e5c07b ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texMathOper guifg=#abb2bf ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi texMathCmd guifg=#56b6c2 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 " }}}
-
 " Extensions: {{{
 
 " COC: {{{
@@ -285,6 +317,23 @@ hi debugPc guifg=NONE ctermfg=NONE guibg=#56b6c2 ctermbg=73 gui=NONE cterm=NONE
 hi debugBreakpoint guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 
 " }}}
+
+" }}}
+" Tmux: {{{
+
+hi tmuxFlags guifg=#61afef ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi tmuxKey guifg=#e06c75 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi tmuxCommands guifg=#c586c0 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi tmuxFormatString guifg=#56b6c2 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+" }}}
+" Vim: {{{
+
+hi vimIsCommand guifg=#e06c75 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi vimHiGuiFgBg guifg=#e06c75 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi vimCommentTitle guifg=#56b6c2 ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi vimString guifg=#e5c07b ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi vimOper guifg=#abb2bf ctermfg=114 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 " }}}
 
